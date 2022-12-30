@@ -50,7 +50,7 @@ module usb_ep_status (
 	wire [31:0] ram_dout1;
 
 	// Instance
-	sram_1rw1r_32_256_8_sky130 ram_I (
+	sky130_sram_1kbyte_1rw1r_32x256_8 ram_I (
 		.clk0   (clk),
 		.csb0   (1'b0),
 		.web0   (ram_web0),
